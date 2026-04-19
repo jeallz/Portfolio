@@ -229,7 +229,7 @@ main .container .conhecimento {
   background-color: #ffffff;
   position: absolute;
   top: 0;
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 main .container .conhecimento .content {
   width: 55vw !important;

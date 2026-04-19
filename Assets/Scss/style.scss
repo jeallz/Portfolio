@@ -267,7 +267,7 @@ main {
             background-color: #ffffff;
             position: absolute;
             top: 0;
-            transform: translateX(100%);
+            transform: translateX(-100%);
 
             .content {
                 width: 55vw !important;
@@ -388,7 +388,7 @@ main {
                 }
             }
         }
-        
+
         .projects {
             position: absolute;
             background-color: #ffffff;
