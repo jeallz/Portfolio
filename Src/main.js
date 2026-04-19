@@ -94,16 +94,13 @@ fetch("./Src/data.json")
 //botões
 const next1 = document.getElementById('next');
 const next2 = document.getElementById('next2');
-const next3 = document.getElementById('next3');
 const voltar1 = document.getElementById('voltar');
-const voltar2 = document.getElementById('voltar2');
 const voltar_init = document.getElementById('voltar_init');
 
 // dots
 const dot1 = document.getElementById('dot1');
 const dot2 = document.getElementById('dot2');
 const dot3 = document.getElementById('dot3');
-const dot4 = document.getElementById('dot4');
 
 //divisões
 const div1 = document.getElementById('div1');
@@ -133,38 +130,16 @@ next2.addEventListener('click', () => {
     dot3.classList.add('active');
 });
 
-voltar2.addEventListener('click', () => {
-    div2.classList.remove('next_div');
-
-    dot3.classList.remove('active');
-    dot2.classList.add('active');
-});
-
-next3.addEventListener('click', () => {
-    div3.classList.add('next_div');
-
-    dot3.classList.remove('active');
-    dot4.classList.add('active');
-});
-
 voltar_init.addEventListener('click', () => {
-    div3.classList.remove('next_div');
-    dot4.classList.remove('active');
-    dot3.classList.add('active');
+    div2.classList.remove('next_div')
+    dot3.classList.remove('active')
+    dot2.classList.add('active')
 
     setTimeout(() => {
-        div2.classList.remove('next_div');
-
-        dot3.classList.remove('active');
-        dot2.classList.add('active');
-    }, 400)
-
-    setTimeout(() => {
-        div1.classList.remove('next_div');
-
-        dot2.classList.remove('active');
-        dot1.classList.add('active');
-    }, 800)
+        dot2.classList.remove('active')
+        div1.classList.remove('next_div')
+        dot1.classList.add('active')
+    }, 500)
 });
 
 // NAVEGAÇÃO PROJETOS
