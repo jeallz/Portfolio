@@ -170,8 +170,13 @@ projetos.addEventListener('click', () => {
 });
 
 projetos2.addEventListener('click', () => {
-    projects_main.classList.add('next_div2');
-    dots.style.display = 'none';
+    if (projects_main.classList.contains('next_div2')) {
+        projects_main.classList.remove('next_div2');
+        dots.style.display = 'flex';
+    } else {
+        projects_main.classList.add('next_div2');
+        dots.style.display = 'none';
+    }
 });
 
 
@@ -186,8 +191,13 @@ diplomas.addEventListener('click', () => {
 });
 
 diplomas2.addEventListener('click', () => {
-    diplomas_main.classList.add('next_div2');
-    dots.style.display = 'none';
+    if (diplomas_main.classList.contains('next_div2')) {
+        diplomas_main.classList.remove('next_div2')
+        dots.style.display = 'flex';
+    } else {
+        diplomas_main.classList.add('next_div2');
+        dots.style.display = 'none';
+    }
 });
 
 
