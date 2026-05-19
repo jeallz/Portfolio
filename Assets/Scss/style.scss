@@ -137,6 +137,12 @@ header {
                 }
             }
 
+            #button {
+                &::after {
+                    display: none;
+                }
+            }
+
             button {
                 margin-top: 3vh;
                 padding: 10px;
@@ -686,7 +692,7 @@ main {
         .content {
             .meio {
                 .banner {
-                    background: url(../Images/banners-projects/nxt.jpg);
+                    background: url(../Images/banners-projects/don.png);
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
@@ -712,7 +718,7 @@ main {
         .content {
             .meio {
                 .banner {
-                    background: url(../Images/banners-projects/stranger.webp);
+                    background: url(../Images/banners-projects/luna.png);
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
@@ -722,7 +728,7 @@ main {
     }
 
     #nxt-banner {
-        background: url(../Images/banners-projects/nxt.jpg);
+        background: url(../Images/banners-projects/don.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -736,7 +742,7 @@ main {
     }
 
     #stranger-banner {
-        background: url(../Images/banners-projects/stranger.webp);
+        background: url(../Images/banners-projects/luna.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

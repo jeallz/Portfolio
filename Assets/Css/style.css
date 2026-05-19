@@ -118,6 +118,9 @@ header nav ul li a:hover {
 header nav ul li a:hover::after {
   width: 100%;
 }
+header nav ul #button::after {
+  display: none;
+}
 header nav ul button {
   margin-top: 3vh;
   padding: 10px;
@@ -585,7 +588,7 @@ main .container .item .content {
   height: auto;
 }
 main .nxt .content .meio .banner {
-  background: url(../Images/banners-projects/nxt.jpg);
+  background: url(../Images/banners-projects/don.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -597,13 +600,13 @@ main .coffee .content .meio .banner {
   background-position: center;
 }
 main .stranger .content .meio .banner {
-  background: url(../Images/banners-projects/stranger.webp);
+  background: url(../Images/banners-projects/luna.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 main #nxt-banner {
-  background: url(../Images/banners-projects/nxt.jpg);
+  background: url(../Images/banners-projects/don.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -615,7 +618,7 @@ main #coffee-banner {
   background-position: center;
 }
 main #stranger-banner {
-  background: url(../Images/banners-projects/stranger.webp);
+  background: url(../Images/banners-projects/luna.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
