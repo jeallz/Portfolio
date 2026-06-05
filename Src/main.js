@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         speed: 150,
         loop: true
     })
-    .type('Web Full-stack JS ', { delay: 3000 })
+    .type('Web Full-stack ', { delay: 3000 })
     .delete(24)
     .type('Mobile Flutter ', { delay: 3000 })
     .delete(24)
