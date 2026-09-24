@@ -325,6 +325,41 @@ voltar_stranger.addEventListener('click', () => {
     stranger_div.classList.remove('next_div');
 });
 
+// SCROLL
+
+let blockScroll = false;
+
+window.addEventListener("wheel", (event) => {
+
+    if (blockScroll) return;
+    event.preventDefault();
+
+    if (event.deltaY > 0) {
+        if (!div1.classList.contains("next_div") && !div2.classList.contains("next_div")) {
+            next1.click();
+        } else if (div1.classList.contains("next_div") && !div2.classList.contains("next_div")) {
+            next2.click();
+        } else if (div2.classList.contains("next_div")) {
+            return;
+        }
+    } else if (event.deltaY < 0) {
+        if (div2.classList.contains("next_div")) {
+            voltar_init.click();
+        } else if (div1.classList.contains("next_div")) {
+            voltar1.click();
+        } else {
+            return;
+        }
+    }
+
+    blockScroll = true;
+
+    setTimeout(() => {
+        blockScroll = false;
+    }, 800);
+
+}, { passive: false });
+
 //LOADING
 
 window.addEventListener("load", () => {
