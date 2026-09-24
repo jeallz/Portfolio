@@ -331,10 +331,22 @@ let blockScroll = false;
 
 window.addEventListener("wheel", (event) => {
 
-    if (blockScroll) return;
     event.preventDefault();
 
+    if (blockScroll) return;
+
+    if (
+        projects_main.classList.contains("next_div2") ||
+        diplomas_main.classList.contains("next_div2") ||
+        nxt_div.classList.contains("next_div") ||
+        coffee_div.classList.contains("next_div") ||
+        stranger_div.classList.contains("next_div")
+    ) {
+        return;
+    }
+
     if (event.deltaY > 0) {
+
         if (!div1.classList.contains("next_div") && !div2.classList.contains("next_div")) {
             next1.click();
         } else if (div1.classList.contains("next_div") && !div2.classList.contains("next_div")) {
@@ -342,7 +354,8 @@ window.addEventListener("wheel", (event) => {
         } else if (div2.classList.contains("next_div")) {
             return;
         }
-    } else if (event.deltaY < 0) {
+    }
+    else if (event.deltaY < 0) {
         if (div2.classList.contains("next_div")) {
             voltar_init.click();
         } else if (div1.classList.contains("next_div")) {
@@ -351,7 +364,7 @@ window.addEventListener("wheel", (event) => {
             return;
         }
     }
-
+    
     blockScroll = true;
 
     setTimeout(() => {
