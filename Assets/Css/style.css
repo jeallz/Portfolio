@@ -333,11 +333,12 @@ main {
             width: 30vw;
             height: 35vh;
             border-radius: 15px;
-            box-shadow: 0 0px 30px black;
+            box-shadow: 0 10px 30px black;
             transition: .2s ease-in-out;
-            cursor: pointer; }
+            cursor: pointer;
+            backdrop-filter: blur(0.5px); }
             main .container .projects .content .meio .banner:hover {
-              box-shadow: 0 0px 40px rgba(255, 255, 255, 0.086); }
+              box-shadow: 0 10px 40px rgba(255, 255, 255, 0.086); }
           main .container .projects .content .meio .projetos {
             background-image: url(../Images/Banners/projetos.png);
             background-size: cover;
