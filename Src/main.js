@@ -103,6 +103,7 @@ const dot2 = document.getElementById('dot2');
 const dot3 = document.getElementById('dot3');
 
 //divisões
+const div0 = document.getElementById('div0');
 const div1 = document.getElementById('div1');
 const div2 = document.getElementById('div2');
 const div3 = document.getElementById('div3');
@@ -110,6 +111,7 @@ const div3 = document.getElementById('div3');
 //código 
 
 next1.addEventListener('click', () => {
+    div0.classList.add('last_div2');
     div1.classList.add('next_div');
 
     dot1.classList.remove('active');
@@ -118,12 +120,15 @@ next1.addEventListener('click', () => {
 
 voltar1.addEventListener('click', () => {
     div1.classList.remove('next_div');
+    div0.classList.remove("last_div2");
     
     dot2.classList.remove('active');
     dot1.classList.add('active');
 });
 
 next2.addEventListener('click', () => {
+    div1.classList.remove('next_div');
+    div1.classList.add('last_div');
     div2.classList.add('next_div');
 
     dot2.classList.remove('active');
@@ -131,15 +136,21 @@ next2.addEventListener('click', () => {
 });
 
 voltar_init.addEventListener('click', () => {
-    div2.classList.remove('next_div')
-    dot3.classList.remove('active')
-    dot2.classList.add('active')
+    div2.classList.remove("next_div");
+
+    div1.classList.remove("last_div");
+    div1.classList.add("next_div");
+
+    dot3.classList.remove("active");
+    dot2.classList.add("active");
 
     setTimeout(() => {
-        dot2.classList.remove('active')
-        div1.classList.remove('next_div')
-        dot1.classList.add('active')
-    }, 500)
+        dot2.classList.remove("active");
+        dot1.classList.add("active");
+
+        div1.classList.remove("next_div");
+        div0.classList.remove("last_div2")
+    }, 800)
 });
 
 // NAVEGAÇÃO PROJETOS
@@ -167,36 +178,97 @@ const projects_main = document.getElementById('projects_main');
 projetos.addEventListener('click', () => {
     projects_main.classList.add('next_div2');
     dots.style.display = 'none';
+    div2.classList.add("last_cont2")
 });
 
 projetos2.addEventListener('click', () => {
-    if (projects_main.classList.contains('next_div2')) {
-        projects_main.classList.remove('next_div2');
-        dots.style.display = 'flex';
-    } else {
-        projects_main.classList.add('next_div2');
-        dots.style.display = 'none';
+    if (!div0.classList.contains("last_div2")) {
+        if (projects_main.classList.contains("next_div2")) {
+            div0.classList.remove("last_cont2")
+            projects_main.classList.remove("next_div2")
+            dots.style.display = 'flex'
+        } else {
+            projects_main.classList.add("next_div2");
+            div0.classList.add("last_cont2")
+            dots.style.display = 'none'
+        }
+    } else if (div1.classList.contains("next_div")) {
+        if (projects_main.classList.contains("next_div2")) {
+            div1.classList.remove("last_cont2")
+            projects_main.classList.remove("next_div2")
+            dots.style.display = 'flex'
+        } else {
+            projects_main.classList.add("next_div2");
+            div1.classList.add("last_cont2")
+            dots.style.display = 'none'
+        }
+    } else if (div2.classList.contains("next_div")) {
+        if (projects_main.classList.contains("next_div2")) {
+            div2.classList.remove("last_cont2")
+            projects_main.classList.remove("next_div2")
+            dots.style.display = 'flex'
+        } else {
+            projects_main.classList.add("next_div2");
+            div2.classList.add("last_cont2")
+            dots.style.display = 'none'
+        }
     }
 });
 
 
 voltar_home1.addEventListener('click', () => {
-    projects_main.classList.remove('next_div2');
-    dots.style.display = 'flex';
+    if (!div0.classList.contains("last_div2")) {
+        projects_main.classList.remove('next_div2');
+        dots.style.display = 'flex';
+        div0.classList.remove("last_cont2")
+    } else if (div1.classList.contains("next_div")) {
+        projects_main.classList.remove('next_div2');
+        dots.style.display = 'flex';
+        div1.classList.remove("last_cont2")
+    } else if (div2.classList.contains("next_div")) {
+        projects_main.classList.remove('next_div2');
+        dots.style.display = 'flex';
+        div2.classList.remove("last_cont2")
+    }
 });
 
 diplomas.addEventListener('click', () => {
+    div2.classList.add("last_cont2");
     diplomas_main.classList.add('next_div2');
     dots.style.display = 'none';
 });
 
 diplomas2.addEventListener('click', () => {
-    if (diplomas_main.classList.contains('next_div2')) {
-        diplomas_main.classList.remove('next_div2')
-        dots.style.display = 'flex';
-    } else {
-        diplomas_main.classList.add('next_div2');
-        dots.style.display = 'none';
+    if (!div0.classList.contains("last_div2")) {
+        if (diplomas_main.classList.contains("next_div2")) {
+            div0.classList.remove("last_cont2")
+            diplomas_main.classList.remove("next_div2")
+            dots.style.display = 'flex'
+        } else {
+            diplomas_main.classList.add("next_div2");
+            div0.classList.add("last_cont2")
+            dots.style.display = 'none'
+        }
+    } else if (div1.classList.contains("next_div")) {
+        if (diplomas_main.classList.contains("next_div2")) {
+            div1.classList.remove("last_cont2")
+            diplomas_main.classList.remove("next_div2")
+            dots.style.display = 'flex'
+        } else {
+            diplomas_main.classList.add("next_div2");
+            div1.classList.add("last_cont2")
+            dots.style.display = 'none'
+        }
+    } else if (div2.classList.contains("next_div")) {
+        if (diplomas_main.classList.contains("next_div2")) {
+            div2.classList.remove("last_cont2")
+            diplomas_main.classList.remove("next_div2")
+            dots.style.display = 'flex'
+        } else {
+            diplomas_main.classList.add("next_div2");
+            div2.classList.add("last_cont2")
+            dots.style.display = 'none'
+        }
     }
 });
 
@@ -204,6 +276,7 @@ diplomas2.addEventListener('click', () => {
 voltar_home2.addEventListener('click', () => {
     diplomas_main.classList.remove('next_div2');
     dots.style.display = 'flex';
+    div2.classList.remove("last_cont2")
 });
 
 // PROJETOS
@@ -223,26 +296,32 @@ const voltar_stranger = document.getElementById('voltar-stranger')
 
 //code
 nxt.addEventListener('click', () => {
+    projects_main.classList.add("last_cont");
     nxt_div.classList.add('next_div');
 });
 
 voltar_nxt.addEventListener('click', () => {
+    projects_main.classList.remove("last_cont");
     nxt_div.classList.remove('next_div');
 });
 
 coffee.addEventListener('click', () => {
+    projects_main.classList.add("last_cont");
     coffee_div.classList.add('next_div');
 });
 
 voltar_coffee.addEventListener('click', () => {
+    projects_main.classList.remove("last_cont");
     coffee_div.classList.remove('next_div');
 });
 
 stranger.addEventListener('click', () => {
+    projects_main.classList.add("last_cont");
     stranger_div.classList.add('next_div');
 });
 
 voltar_stranger.addEventListener('click', () => {
+    projects_main.classList.remove("last_cont");
     stranger_div.classList.remove('next_div');
 });
 
@@ -280,3 +359,119 @@ window.addEventListener("load", () => {
 
     }, 1200)
 });
+
+// canvas
+
+const canvas = document.getElementById("background");
+const ctx = canvas.getContext("2d");
+
+let width;
+let height;
+
+const mouse = {
+    x: null,
+    y: null,
+    radius: 120
+};
+
+const particles = [];
+
+function resize() {
+    const dpr = window.devicePixelRatio || 1;
+
+    width = window.innerWidth;
+    height = window.innerHeight;
+
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    createParticles();
+}
+
+function createParticles() {
+    particles.length = 0;
+
+    const spacing = 40;
+
+    for (let y = spacing / 2; y < height; y += spacing) {
+        for (let x = spacing / 2; x < width; x += spacing) {
+            particles.push({
+                x,
+                y,
+                baseX: x,
+                baseY: y,
+                size: Math.random() * 1.2 + 0.4,
+                alpha: Math.random() * 0.5 + 0.15,
+                vx: 0,
+                vy: 0
+            });
+        }
+    }
+}
+
+function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (const particle of particles) {
+        let dx = mouse.x - particle.x;
+        let dy = mouse.y - particle.y;
+
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (mouse.x !== null && distance < mouse.radius) {
+            const force = (mouse.radius - distance) / mouse.radius;
+
+            const angle = Math.atan2(dy, dx);
+
+            particle.vx -= Math.cos(angle) * force * 0.8;
+            particle.vy -= Math.sin(angle) * force * 0.8;
+        }
+
+        // Volta suavemente para a posição original
+        particle.vx += (particle.baseX - particle.x) * 0.015;
+        particle.vy += (particle.baseY - particle.y) * 0.015;
+
+        // Fricção
+        particle.vx *= 0.90;
+        particle.vy *= 0.90;
+
+        particle.x += particle.vx;
+        particle.y += particle.vy;
+
+        ctx.beginPath();
+
+        ctx.arc(
+            particle.x,
+            particle.y,
+            particle.size,
+            0,
+            Math.PI * 2
+        );
+
+        ctx.fillStyle = `rgba(255, 255, 255, ${particle.alpha})`;
+
+        ctx.fill();
+    }
+
+    requestAnimationFrame(animate);
+}
+
+window.addEventListener("resize", resize);
+
+window.addEventListener("mousemove", (event) => {
+    mouse.x = event.clientX;
+    mouse.y = event.clientY;
+});
+
+window.addEventListener("mouseleave", () => {
+    mouse.x = null;
+    mouse.y = null;
+});
+
+resize();
+animate();
