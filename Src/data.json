@@ -31,39 +31,39 @@
       "descricao": "GitHub é uma plataforma baseada em nuvem que utiliza o sistema Git para hospedar repositórios de código e facilitar a colaboração entre desenvolvedores. Ele permite armazenar projetos, acompanhar alterações no código, revisar contribuições e gerenciar versões de forma organizada. Além disso, oferece recursos como issues, pull requests, integração contínua e páginas para documentação. O GitHub também funciona como um portfólio profissional para desenvolvedores, permitindo que compartilhem seus projetos e demonstrem suas habilidades técnicas para empresas e outros profissionais da área."
     },
     {
-      "nome": "Lua",
+      "nome": "Next.js",
       "nivel": "Básico",
-      "descricao": "Lua é uma linguagem de programação leve, rápida e extremamente flexível, criada originalmente no Brasil. Ela é amplamente utilizada em jogos, sistemas embarcados e aplicações que precisam de scripts configuráveis. Lua possui uma sintaxe simples e fácil de aprender, mas ao mesmo tempo poderosa o suficiente para desenvolver sistemas complexos. Muitos motores de jogos utilizam Lua para scripting, permitindo que comportamentos e lógicas sejam alterados sem modificar o código principal da aplicação. Sua eficiência e simplicidade a tornam muito popular em projetos que exigem desempenho e baixo consumo de recursos."
+      "descricao": "Next.js é um framework baseado em React usado para criar aplicações web modernas, rápidas e escaláveis. Ele facilita o desenvolvimento com recursos como roteamento, renderização no servidor, otimização de imagens e páginas e criação de APIs, permitindo desenvolver aplicações completas com uma estrutura organizada."
     },
     {
-      "nome": "Dart",
-      "nivel": "Básico",
-      "descricao": "Dart é uma linguagem de programação desenvolvida pelo Google e amplamente conhecida por ser utilizada no desenvolvimento de aplicações com o framework Flutter. Ela foi projetada para criar aplicações rápidas e modernas para diferentes plataformas, incluindo mobile, web e desktop. Dart possui tipagem opcional, orientação a objetos e ferramentas robustas para desenvolvimento de interfaces. Quando utilizada com Flutter, permite criar aplicações multiplataforma com uma única base de código, o que reduz significativamente o tempo de desenvolvimento e manutenção de projetos."
+      "nome": "Express.js",
+      "nivel": "Avançado",
+      "descricao": "Express é um framework minimalista para Node.js, utilizado principalmente no desenvolvimento de aplicações e APIs para a web. Ele facilita a criação de servidores, rotas e requisições HTTP, permitindo organizar o back-end de forma simples e eficiente. Também pode ser integrado com bancos de dados, sistemas de autenticação e outras ferramentas para construir aplicações web completas."
     },
     {
-      "nome": "Node.js",
+      "nome": "TypeScript",
       "nivel": "Intermediário",
-      "descricao": "Node.js é um ambiente de execução que permite utilizar JavaScript no lado do servidor. Ele é construído sobre o motor V8 do Google Chrome e foi projetado para criar aplicações altamente escaláveis e eficientes. Node.js utiliza um modelo de execução assíncrono baseado em eventos, o que permite lidar com múltiplas requisições simultaneamente sem bloquear o sistema. Isso o torna muito popular para desenvolvimento de APIs, aplicações em tempo real, servidores web e ferramentas de automação. Seu grande ecossistema de pacotes facilita a criação de soluções complexas rapidamente."
+      "descricao": "TypeScript é uma linguagem baseada em JavaScript que adiciona tipagem estática ao desenvolvimento. Ela ajuda a identificar erros durante a programação, melhora a organização e facilita a manutenção de projetos maiores. O TypeScript é amplamente utilizado em aplicações front-end e back-end, sendo compatível com frameworks e ferramentas como React, Next.js, Node.js e NestJS."
     },
     {
-      "nome": "React.js",
+      "nome": "Nest.js",
       "nivel": "Básico",
-      "descricao": "React.js é uma biblioteca JavaScript criada pelo Facebook para a construção de interfaces de usuário modernas e dinâmicas. Ela é baseada no conceito de componentes reutilizáveis, permitindo que diferentes partes de uma aplicação sejam desenvolvidas e mantidas de forma independente. React utiliza um sistema chamado Virtual DOM para atualizar apenas as partes necessárias da interface, tornando as aplicações mais rápidas e eficientes. É amplamente utilizado no desenvolvimento de aplicações web modernas, especialmente em projetos que exigem alta interatividade e escalabilidade."
+      "descricao": "NestJS é um framework para Node.js desenvolvido com TypeScript, voltado principalmente para a criação de aplicações e APIs de back-end. Ele utiliza uma arquitetura organizada baseada em módulos, controllers e services, facilitando a manutenção e a escalabilidade dos projetos. Também oferece recursos para trabalhar com autenticação, bancos de dados, APIs REST e WebSockets, sendo bastante utilizado na construção de aplicações back-end robustas."
     },
     {
-      "nome": "WordPress",
+      "nome": "Discord.js",
+      "nivel": "Avançado",
+      "descricao": "Discord.js é uma biblioteca para Node.js que permite criar bots e aplicações integradas ao Discord. Ela oferece recursos para trabalhar com servidores, canais, mensagens, comandos, eventos e interações, facilitando a criação de sistemas personalizados. É bastante utilizada para desenvolver bots de moderação, tickets, economia, automações e gerenciamento de comunidades."
+    },
+    {
+      "nome": "MongoDB",
       "nivel": "Intermediário",
-      "descricao": "WordPress é um sistema de gerenciamento de conteúdo extremamente popular utilizado para criar e administrar sites, blogs e lojas virtuais. Ele permite que usuários construam páginas web completas sem a necessidade de programar tudo do zero. A plataforma possui milhares de temas e plugins que expandem suas funcionalidades, permitindo desde sites simples até projetos complexos. Desenvolvedores também podem personalizar profundamente o WordPress utilizando PHP, HTML, CSS e JavaScript, criando soluções sob medida para diferentes tipos de projetos e clientes."
+      "descricao": "MongoDB é um banco de dados NoSQL orientado a documentos, que armazena informações em estruturas semelhantes a objetos JSON. Ele oferece flexibilidade para trabalhar com diferentes tipos de dados e facilita a criação de aplicações que precisam lidar com grandes volumes de informações. É bastante utilizado em aplicações web e back-end, podendo ser integrado com tecnologias como Node.js, Express, NestJS e React."
     },
     {
-      "nome": "Arduino",
-      "nivel": "Básico",
-      "descricao": "Arduino é uma plataforma de prototipagem eletrônica baseada em hardware e software de código aberto. Ela permite que desenvolvedores e entusiastas criem projetos que integram sensores, motores, LEDs e diversos outros componentes eletrônicos. A programação é feita utilizando uma linguagem baseada em C/C++, dentro de um ambiente simples e acessível. Arduino é amplamente utilizado em projetos educacionais, automação, robótica e Internet das Coisas. Sua popularidade vem da facilidade de uso e da grande comunidade que compartilha projetos e soluções."
-    },
-    {
-      "nome": "cPanel",
+      "nome": "MySQL",
       "nivel": "Intermediário",
-      "descricao": "cPanel é um painel de controle amplamente utilizado para gerenciamento de hospedagens de sites em servidores web. Ele oferece uma interface gráfica que permite administrar arquivos, bancos de dados, domínios, contas de e-mail e configurações do servidor sem a necessidade de utilizar linha de comando. Desenvolvedores e administradores de sites utilizam o cPanel para gerenciar aplicações web, instalar sistemas como WordPress, configurar backups e monitorar recursos do servidor. Sua interface intuitiva facilita a administração de ambientes de hospedagem mesmo para usuários menos técnicos."
+      "descricao": "MySQL é um sistema de gerenciamento de banco de dados relacional (SQL), utilizado para armazenar e organizar informações em tabelas. Ele permite criar, consultar, atualizar e relacionar dados por meio da linguagem SQL. É muito utilizado em aplicações web e pode ser integrado com tecnologias como Node.js, Express, NestJS e PHP."
     },
     {
       "nome": "Visual Studio Code",
