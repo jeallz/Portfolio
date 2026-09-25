@@ -166,14 +166,23 @@ const voltar_home2 = document.getElementById('voltar_home2');
 
 // divisões
 const projects_main = document.getElementById('projects_main');
+const diplomas_main = document.getElementById('diplomas_main');
  
 projetos.addEventListener('click', () => {
+    if (diplomas_main.classList.contains("next_div2")) {
+        diplomas_main.classList.remove("next_div2");
+    }
+
     projects_main.classList.add('next_div2');
     dots.style.display = 'none';
     div2.classList.add("last_cont2")
 });
 
 projetos2.addEventListener('click', () => {
+    if (diplomas_main.classList.contains("next_div2")) {
+        diplomas_main.classList.remove("next_div2")
+    }
+
     if (!div0.classList.contains("last_div2")) {
         if (projects_main.classList.contains("next_div2")) {
             div0.classList.remove("last_cont2")
@@ -225,12 +234,20 @@ voltar_home1.addEventListener('click', () => {
 });
 
 diplomas.addEventListener('click', () => {
+    if (projects_main.classList.contains("next_div2")) {
+        projects_main.classList.remove("next_div2");
+    }
+
     div2.classList.add("last_cont2");
     diplomas_main.classList.add('next_div2');
     dots.style.display = 'none';
 });
 
 diplomas2.addEventListener('click', () => {
+    if (projects_main.classList.contains("next_div2")) {
+        projects_main.classList.remove("next_div2");
+    }
+
     if (!div0.classList.contains("last_div2")) {
         if (diplomas_main.classList.contains("next_div2")) {
             div0.classList.remove("last_cont2")
@@ -266,9 +283,19 @@ diplomas2.addEventListener('click', () => {
 
 
 voltar_home2.addEventListener('click', () => {
-    diplomas_main.classList.remove('next_div2');
-    dots.style.display = 'flex';
-    div2.classList.remove("last_cont2")
+    if (!div0.classList.contains("last_div2")) {
+        diplomas_main.classList.remove('next_div2');
+        dots.style.display = 'flex';
+        div0.classList.remove("last_cont2")
+    } else if (div1.classList.contains("next_div")) {
+        diplomas_main.classList.remove('next_div2');
+        dots.style.display = 'flex';
+        div1.classList.remove("last_cont2")
+    } else if (div2.classList.contains("next_div")) {
+        diplomas_main.classList.remove('next_div2');
+        dots.style.display = 'flex';
+        div2.classList.remove("last_cont2")
+    }
 });
 
 // PROJETOS
