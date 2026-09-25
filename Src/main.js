@@ -143,14 +143,6 @@ voltar_init.addEventListener('click', () => {
 
     dot3.classList.remove("active");
     dot2.classList.add("active");
-
-    setTimeout(() => {
-        dot2.classList.remove("active");
-        dot1.classList.add("active");
-
-        div1.classList.remove("next_div");
-        div0.classList.remove("last_div2")
-    }, 800)
 });
 
 // NAVEGAÇÃO PROJETOS
